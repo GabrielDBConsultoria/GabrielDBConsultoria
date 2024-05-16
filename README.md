@@ -5,7 +5,7 @@
 - 📫 How to reach me: gabrieldbarrosconsultoria@gmail.com / https://www.linkedin.com/in/gabriel-delucca-barros-69290a4b/
 - 😄 Pronouns: he / him /his
   
--  Welcome to my profile!
+   Welcome to my profile!
   😊 See also here: https://acesse.dev/kAxW9
 
 <!---
