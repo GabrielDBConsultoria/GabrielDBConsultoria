@@ -1,14 +1,24 @@
-- 👋 Hi, I’m Gabriel Delucca 
-- 👀 I’m interested in Data Science , Machine Learning and Automation development
-- 🌱 I’m currently learning R
-- 💞️ I’m looking to collaborate on Data Analysis and Data Science
-- 📫 How to reach me: gabrieldbarrosconsultoria@gmail.com / https://www.linkedin.com/in/gabriel-delucca-barros-69290a4b/
-- 😄 Pronouns: he / him /his
-  
-   Welcome to my profile!
-  😊 See also here: https://acesse.dev/kAxW9
+# 👋 Welcome!
 
-<!---
-GabrielDBConsultoria/GabrielDBConsultoria is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+I'm Gabriel Delucca Barros, a **Data Analyst** and **Business Analyst** with experience helping companies transform data into actionable insights and strategic decisions.
+
+## 🔍 Focus Areas
+- Data Analysis  
+- Business Analysis  
+- Process Improvement  
+
+## 🧰 Tools & Skills
+- SQL   
+- Python  
+- Power BI  
+- Looker Studio  
+- Excel  
+- Power Query  
+- Data Warehousing  
+- ETL Processes
+- Power Automate
+- Microsoft 365 Copilot
+
+## 📫 Contact
+- 📧 gabrieldbarrosconsultoria@gmail.com  
+- 💼 [LinkedIn](https://www.linkedin.com/in/gabriel-delucca-barros-69290a4b/)
