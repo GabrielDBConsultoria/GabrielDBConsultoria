@@ -1,28 +1,71 @@
-# 👋 Welcome!
+# Gerador de reunião em áudio (TTS com OpenAI)
 
-I'm Gabriel Delucca Barros, a **Data Analyst** and **Business Analyst** with experience helping companies transform data into actionable insights and strategic decisions, especially in industrial, logistics, and supply chain environments.
+Projeto Python minimalista que lê um roteiro de reunião (`input/roteiro.txt`), separa as falas por personagem, gera MP3 por fala com vozes diferentes e concatena tudo em `output/reuniao_final.mp3`.
 
-## 🔍 Focus Areas
-- Data Analysis  
-- Business Analysis  
-- Process Improvement  
+## Estrutura
 
-## 🧰 Tools & Skills
-- SQL   
-- Python  
-- Power BI / DAX 
-- Looker Studio  
-- Excel
-- VBA
-- Power Query  
-- Data Warehousing
-- Data Modeling
-- ETL Processes
-- Power Automate
-- Microsoft 365 Solutions
-- AI
+- `main.py` — fluxo completo (parse, TTS, merge)
+- `requirements.txt` — dependências
+- `.env.example` — exemplo de variável de ambiente
+- `input/roteiro.txt` — roteiro (criado automaticamente se não existir)
+- `output/` — mp3 individuais + arquivo final
 
-## 📫 Contact
-- 📧 gabriel@aracaconsultoria.com.br
+## Instalação
 
-- 💼 [LinkedIn](https://www.linkedin.com/in/gabriel-delucca-barros-69290a4b/)
+```bash
+python -m venv .venv
+source .venv/bin/activate  # Linux/macOS
+pip install -r requirements.txt
+```
+
+## Configuração do `.env`
+
+```bash
+cp .env.example .env
+```
+
+Depois, edite `.env` e coloque sua chave:
+
+```env
+OPENAI_API_KEY=...
+```
+
+## Como usar / trocar roteiro
+
+1. Edite `input/roteiro.txt` no formato:
+   ```text
+   [Kai]
+   Texto da fala do Kai.
+
+   [Marco]
+   Texto da fala do Marco.
+   ```
+2. Execute:
+   ```bash
+   python main.py
+   ```
+
+Se `input/roteiro.txt` não existir, o script cria automaticamente um roteiro de exemplo.
+
+## Personagens, vozes e estilo
+
+No `main.py`, altere o dicionário `VOICE_MAP` para ajustar personagem, voz e instrução de estilo.
+
+## Observação sobre ffmpeg
+
+O `pydub` usa `ffmpeg` para manipular/exportar MP3. Instale o ffmpeg no sistema e garanta que o binário esteja no `PATH`.
+
+Exemplo (Ubuntu/Debian):
+
+```bash
+sudo apt-get update && sudo apt-get install -y ffmpeg
+```
+
+## Lógica de negócio e técnica (resumo)
+
+- O parser identifica linhas no formato `[Personagem]`.
+- Todo texto até o próximo bloco é associado ao personagem atual.
+- Linhas vazias extras são ignoradas.
+- Cada fala gera um MP3 independente via `client.audio.speech.create(...)`.
+- Os MP3 são concatenados em ordem com pausa configurável (`PAUSE_MS`).
+
