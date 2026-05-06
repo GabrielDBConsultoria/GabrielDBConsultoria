@@ -1,0 +1,68 @@
+[Kai]
+Fala, time. Beleza? Bom, chamei essa síncrona rápida porque a gente precisa fechar o planejamento da Sprint de Compras.
+
+[Marco]
+Cara... Kai, segura aí. Não manda essa mensagem pro Gabriel ainda não.
+
+[Kai]
+Pô, Marco, o que foi? Isso é o que tá travando a tua frente.
+
+[Marco]
+Então, bicho... Eu estava aqui escavando as conexões do Azure SQL e rodando um mapeamento local. Cara, o pipeline ERP para o Azure SQL já existe e está rodando em produção!
+
+[Rita]
+Peraí, como assim já existe? A gente não ia desenhar a arquitetura hoje?
+
+[Marco]
+Pois é! Eu achei um arquivo de status aqui no diretório do projeto. O ETL em Python foi concluído no dia 23 de abril. Ele já puxa os dados do Guardian via ODBC direto para a staging. Inclusive, processou mais de 24 mil ordens de compra. E o script do SharePoint também já está integrado via Graph API.
+
+[Rita]
+Deixa eu ver isso... Caramba, Marco, você tem razão. Olha aqui no repositório: o modelo que você criou ontem é literalmente uma duplicata. O schema real e oficial está no diretório do pipeline.
+
+[Kai]
+Espera, deixa eu entender. Então a automação diária que a Sofia estava avaliando se faria por Azure Function ou Power Automate...
+
+[Marco]
+Já tá feita, Kai! Tem um Task Scheduler configurado na VM chamado ETL BI Compras. Ele roda três vezes ao dia: às 8h, meio-dia e 5h da tarde. Tá tudo documentado nos logs da máquina.
+
+[Rita]
+Tá, então vamos recalibrar o cenário aqui. Basicamente, o que a gente achou que era o escopo da sprint já tá entregue. Criar pipeline? Check, já existe. Estruturar modelo SQL? Check, tá pronto. Carga diária? Check, rodando três vezes ao dia na VM.
+
+[Kai]
+Rapaz... Que notícia excelente. Isso muda tudo. O nosso bloqueio então não é infraestrutura de dados, é a entrega do dashboard em si.
+
+[Rita]
+Exatamente. O foco real agora é outro. A gente precisa validar se o ETL rodou hoje direitinho, conectar o Power BI Desktop ao Azure SQL e fechar o storytelling com os dados reais para publicar a Versão 2.
+
+[Kai]
+Perfeito. Já vou repriorizar a Sprint aqui no Board. Meta única: Dashboard V2 publicado no Power BI Service. Vamos direto pras tarefas.
+
+[Kai]
+Marco, você consegue matar a tarefa rápida hoje? Só entrar na VM e checar o log do dia de hoje. Se tiver falhado por algum motivo, você roda manualmente e avisa o Lucas.
+
+[Marco]
+Fechou, 15 minutinhos eu mato isso antes do Lucas começar.
+
+[Kai]
+Boa. Aí o Lucas entra hoje à noite na tarefa principal: conecta o Power BI no schema de compras, importa as medidas do arquivo DAX e monta o layout seguindo aquele blueprint de página única que já estava desenhado. A estimativa dele para isso é de 2 a 3 horas.
+
+[Rita]
+E sobre o Power Automate com o Financeiro?
+
+[Kai]
+Cara, isso aí fica como um teste pendente com eles, não vai bloquear o lançamento do dashboard. Vou deixar no radar.
+
+[Rita]
+Perfeito. Só precisamos confirmar uma coisa com o Gabriel para o Lucas conseguir rodar o processo hoje à noite.
+
+[Kai]
+É isso que eu ia falar. Vou mandar um ping para ele agora perguntando se ele já tem o arquivo do BI salvo localmente e se ele está com a senha do Azure SQL em mãos. Se ele tiver esses acessos, o Lucas já puxa ele na call hoje e mata essa conexão seguindo o checklist.
+
+[Marco]
+Fechou. Por aqui esclarecido. Vou lá olhar os logs.
+
+[Rita]
+Boa, time. Belo achado, Marco. Até mais tarde!
+
+[Kai]
+Valeu, pessoal, bom trabalho. Mandando a mensagem pro Gabriel em 3, 2, 1...
