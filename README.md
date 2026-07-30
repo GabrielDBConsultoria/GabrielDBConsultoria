@@ -11,7 +11,7 @@ I operate at the precise intersection where complex business logic meets softwar
 - **Software Architecture & Backend:** Python | SQL | FastAPI | Node.js | Serverless (GCP Cloud Run / Functions) | Docker
 - **Frontend & Web Apps:** React | Next.js | TypeScript | TailwindCSS | Shadcn/ui | TanStack Query | Framer Motion
 - **Enterprise & Low-Code:** MS Power Platform (Power Automate, Power Apps, Power BI) | M365 Integrations
-- **AI & Integrations:** LangChain | LlamaIndex | Generative AI SDKs (OpenAI, Google GenAI)
+- **AI & Integrations:** LangChain | LlamaIndex | Generative AI SDKs (OpenAI, Google GenAI, Anthropic Claude) | Cursor
 
 ---
 
@@ -19,7 +19,7 @@ I operate at the precise intersection where complex business logic meets softwar
 
 - **Project & Content Management:** Notion & Notion API (Notion Developers) for agile tracking, content management, and custom integrations to **sync any external data source** (bi-directional data synchronization).
 - **Knowledge Management (PKM):** Obsidian (local-first Markdown second brain for system design mapping) & Raindrop.io (technical resource curation).
-- **AI-Assisted Research:** Perplexity AI, Gemini, and Claude for advanced semantic research, documentation analysis, and architectural exploration.
+- **AI-Assisted Research & Dev:** Cursor (AI-powered code editor), ChatGPT, Claude, Gemini, and Perplexity AI for advanced semantic research, documentation analysis, and architectural exploration.
 
 ---
 
