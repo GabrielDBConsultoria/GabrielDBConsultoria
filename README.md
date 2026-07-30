@@ -6,20 +6,20 @@ I operate at the precise intersection where complex business logic meets softwar
 
 ---
 
-### 🛠️ Core Expertise & Tech Stack
+### 🛠️ Tech Stack & Ecosystem
 
-- **Software Architecture:** Distributed systems, Serverless architectures, API design & system integrations.
-- **Process Automation:** Microsoft 365, Power Platform (Power Automate, Power Apps), customized workflow automation.
-- **Data Engineering:** SQL, Python, GCP (BigQuery, Cloud Functions), database design.
-- **AI Integrations:** Bringing LLMs and intelligent automations into legacy systems and business operations.
+- **Software Architecture & Backend:** Python | SQL | FastAPI | Node.js | Serverless (GCP Cloud Run / Functions) | Docker
+- **Frontend & Web Apps:** React | Next.js | TypeScript | TailwindCSS | Shadcn/ui | TanStack Query | Framer Motion
+- **Enterprise & Low-Code:** MS Power Platform (Power Automate, Power Apps, Power BI) | M365 Integrations
+- **AI & Integrations:** LangChain | LlamaIndex | Generative AI SDKs (OpenAI, Google GenAI)
 
 ---
 
-### 💼 Current Focus
+### ⚙️ Productivity, PKM & AI Workflow
 
-- 🚀 Leading tech solutions and architecture design at **Araçá Consultoria**.
-- ☁️ Designing serverless and pay-per-use architectures on Google Cloud to optimize infrastructure costs.
-- ⚙️ Helping companies automate operations without the complexity of maintaining a large, internal IT infrastructure.
+- **Project & Content Management:** Notion & Notion API (Notion Developers) for agile tracking, content management, and custom integrations to **sync any external data source** (bi-directional data synchronization).
+- **Knowledge Management (PKM):** Obsidian (local-first Markdown second brain for system design mapping) & Raindrop.io (technical resource curation).
+- **AI-Assisted Research:** Perplexity AI, Gemini, and Claude for advanced semantic research, documentation analysis, and architectural exploration.
 
 ---
 
